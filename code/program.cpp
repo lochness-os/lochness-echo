@@ -4,7 +4,7 @@
 // gmail: <michaelbrockus@gmail.com>
 //
 #include "program.hpp"
-#include <iostream>
+#include <cstdio>
 #include <cstdlib>
 
 //
@@ -20,8 +20,15 @@ const char * greet(void)
 // application logic must be implemented
 // in the foundation.
 //
-int foundation(void)
+int foundation(int argc, char **argv)
 {
-    std::cout << greet() << std::endl;
+    for(int iter = 1; iter < argc; ++iter)
+    {
+        printf("%s", *(argv + iter));
+        if(iter < argc - 1)
+        { // Print a space at the end
+            putc(' ', stdout);
+        } // end if
+    } // end for
     return EXIT_SUCCESS;
 } // end of function foundation
