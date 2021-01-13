@@ -1,10 +1,13 @@
-# C++ Program
+# LochNess `echo` utility
 
 ## About
 
 * * *
 
-Please add relevant information about your application.
+echo command in linux is used to display line of text/string
+that are passed as an argument . This is a built in command
+that is mostly used in shell scripts and batch files to output
+status text to the screen or a file.
 
 ## Program Preview
 
@@ -16,7 +19,7 @@ Please add an image for the user to see.
 
 * * *
 
-Targeted audience we are building for is MacOSX and Linux users. This project uses
+Targeted audience we are building for is LochNess OS users. This project uses
 [Meson](https://mesonbuild.com/) `0.56.0` and newer.
 
 ## Setup, Compile and Install
@@ -46,7 +49,7 @@ meson install -C builddir
 And finally we run this cool application:
 
 ```console
-prog
+echo <user string>
 ```
 
 ## Contact the developer
