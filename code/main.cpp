@@ -7,7 +7,7 @@
 
 
 // main is where program execution starts
-int main (int argc, char** argv){
+int main (int argc, char** argv)
 {
     return foundation(argc, argv);
 } // end of function main
